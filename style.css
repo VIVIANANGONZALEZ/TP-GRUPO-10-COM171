@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-image: linear-gradient(135deg
+    , #00b7d4, #505488, #2f3f80, #4542f7, #5A4894, #a950a1, #ff7eae, #84e208b9 );
+    background-size: 500% ;
+    animation: fanimado 10s infinite;
+}
+.texto {
+    color: white;
+    text-align: center center;
+    margin: 300px 0;
+    font-size: 26px;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;    
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+
+}
+
+.boxprincipio {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    }
+
+header{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    border-color: rgb(2, 25, 46);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+.logo img{
+    height: 55px;
+    margin-right: 10px;
+}
+nav{
+    padding-right: 500px;
+}
+nav a{
+    font-weight: 700;
+    padding-right: 20px;
+    justify-content: center center;
+    text-align: center;     
+}
+
+nav a:hover{
+    color: black;
+    border-color: antiquewhite;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.contenedor{
+    display: flex;
+}
+.div-1{
+    background-color: #09080e57;
+    width: 350px;
+    padding: 35px;
+    margin: left 10px;
+    margin-right:10px;
+    text-align: center;  
+    .nav{
+        width: 35%;
+    }
+
+}
+.div-2{
+    background-color: #5a489462;
+    width: 900px;
+    padding: 35px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin: top 10px;
+    }
+
+.quienesSomos{
+    background-color: #5a489462;
+}
+.contenedor2{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.contenedor3 {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.salidasGrupales {
+    display: flex;
+    background-color: #5a489462;
+    width: 100%;
+    padding: 10px;
+}
+
+.cruceros {
+    display: flex;
+    background-color: #5a489462;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-inline: 20px;
+    margin-right: 0px;
+}
+.contactenos{
+    background-color: #5a489462;
+    width: 600px;
+    padding: 50px;
+}
+.mapa{
+    display: flexbox;
+    background-color: #5a489462;
+    width: 600px;
+    padding: 50px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+footer{
+    display: grid;
+    min-height: 50px;
+    background-color: #5a489462;
+    margin-top: 10px;
+}
+
+.containerlegal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.copyrightbox{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -3;
+    }
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,300&display=swap');
+
+  .contenedor3{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'poppins', sans-serif;
+  }
+
+  .material-symbols-outlined {
+    margin left: 3px;
+    padding: 0px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400px,
+    'GRAD' 0,
+    'opsz' 48
+    
+    
+  }

@@ -12,23 +12,23 @@
   </head>
 
   <body>
-    <div class="boxprincipio">
+    <nav id="nav" class="nav1">
+    <div class="contenedor-nav">
+      <div class="logo">
       <a href="#" class="logo">
         <img src="VIAJO_LIBRE-removebg-preview.png" alt="logo de la compania" class="logo-img">
         <h3 class="nombre-empresa">Viajo Libre</h3>
       </a>
-    </div>
-      <div class="container-fluid">
-        <nav>
-          <ul>
+      </div>
+        <div class="enlaces" id="enlaces">
           <a href="" class="nav-link">INICIO</a>
           <a href="" class="nav-link">QUIENES SOMOS</a>
           <a href="" class="nav-link">DESTINOS</a>
           <a href="" class="nav-link">PAQUETES</a>
           <a href="" class="nav-link">CONTACTO</a>
-        </ul>
-        </nav>
-      </div>
+        </div>
+     </div>
+    </nav>
     <header>
       <video muted autoplay loop>
         <source src="./VIDEO/fondocaribe.mp4" type="video/mp4">
@@ -38,8 +38,7 @@
 
     <main>
       <div class="buscadordeviaje">
-        <h3>Comienza a programar tu viaje con nosotros</h3>
-
+      <h3>Comienza a programar tu viaje con nosotros</h3>
         <form>
           <label for="departure-date">Fecha de salida:</label>
           <input type="date" id="departure-date" name="departure-date" />
@@ -58,7 +57,7 @@
 
           <input type="submit" value="Buscar" />
         </form>
-      </div>
+      </div> 
       <div class="contenedor">
         <div class="div-1">
           <h3>DESTINOS</h3>
@@ -70,10 +69,16 @@
             <a href="" class="nav-link">AFRICA</a>
             <a href="" class="nav-link">OCEANIA</a>
           </nav>
-          <div id="slider-container">
-            <div class="slider">
-             <!-- EN ESTE CONTENEDOR HAY QUE PONER ALGO PORQUE QUEDA VACIO DEBAJO DEL NAV DESTINOS Y NO SE QUE--> 
-            </div>
+          <h3> HOT SALE VUELOS </h3>
+          <div id="ofertas-container">
+            <a href= ""><img src="./IMG/oferta1.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta2.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta3.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta4.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta5.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta6.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta7.jpeg" style="width: 40%" /></a>
+            <a href= ""><img src="./IMG/oferta8.jpeg" style="width: 40%" /></a>
           </div>
         </div>
         <div class="div-2">
@@ -110,14 +115,17 @@
           </div>
         </div>
       </div>
+
       <div class="quienesSomos">
         <h3>QUIENES SOMOS</h3>
         <h4>
           Viajo Libre  nacio desde la idea de acercar a las personas a su anhelo de viajar. De ahi el eslogan "LA LIBERTAD DE VIAJAR CUANDO QUERES". Como es posible? porque ademas de tener todas las opciones de pago del mercado, ofertas unicas y exclusivas, contamos con financiacion propia adaptada a cada cliente. QUE NOS DIFERENCIA? La experiencia y calidad de viaje comienzan desde que el cliente consulta con nosotros por primera vez. Mantenemos comunicacion constante y trato personalizado. Nos ocupamos de restar preocupaciones, gestionando todo lo necesario para que el viaje sea exitoso.
           Sus fundadoras Viviana Gonzalez y Daniela Zamora, dos grandes viajeras y amigas, que desde Argentina alguna vez sonaron con este proyecto y hoy es real. 
         </h4>
-        <img src="./vivi.jpeg" alt="conocenos" />
+        <img src="./vivi.jpeg" alt="conocenos" style="width: 10%;"/>
+        <img src="./DANI.png" alt="conocenos" style="width: 18%;"/>
       </div>
+
       <div class="contenedor2">
         <div class="salidasGrupales">
           <nav>
@@ -132,25 +140,25 @@
           <span class="material-symbols-outlined"> directions_boat </span>
         </div>
       </div>
-      <div class="contenedor3">
+
+<!-- SECCION CONTACTO VENTAS-->
+      <div class="contenedor3"> 
         <div class="contactenos">
-          <form class="nombre">
-            <h3>CONTACTO</h3>
-            <p>
-              <h5>El viaje de tu vida empieza aqui.Haz tu primera consulta</h5>
-            </p>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" class="box" />
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" class="box" />
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar" class="submit" />
-          </form>
-        </div>
-        
+          <h3>CONTACTO</h3>
+          <div class="formulariocontacto">
+            <form action="/enviar-mensaje" method="POST">
+              <label for="nombre">Nombre:</label><br />
+              <input type="text" id="nombre" name="nombre" /><br />
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" /><br />
+              <label for="mensaje">Mensaje:</label><br />
+              <textarea id="mensaje" name="mensaje"></textarea><br />
+              <input type="submit" value="Enviar mensaje" />
+            </form>
+          </div>  
+        </div>        
         <div class="mapa">
-          <h3>VENTAS</h3>
+          <h3>VENTAS</h3>          
           <div class="col-md-4">
             <div class="box">
               <p>Tel: 0800-222-0800</p>
@@ -158,7 +166,7 @@
               <p>Direccion: Alicia M. De Justo 350, Bs As, Argentina</p>
             </div>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.417995580115!2d-58.369892779953034!3d-34.6028467587149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335320e5ec191%3A0x738d457174ba8d81!2sAv.%20Alicia%20Moreau%20de%20Justo%20350%2C%20C1107%20Puerto%20Madero%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681499861103!5m2!1ses!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"  
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.417995580115!2d-58.369892779953034!3d-34.6028467587149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335320e5ec191%3A0x738d457174ba8d81!2sAv.%20Alicia%20Moreau%20de%20Justo%20350%2C%20C1107%20Puerto%20Madero%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681499861103!5m2!1ses!2sar" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"  
         </div>
       </div>
     </main>

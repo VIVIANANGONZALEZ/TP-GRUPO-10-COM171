@@ -1,3 +1,5 @@
+window.jsPDF = window.jspdf.jsPDF;
+
 //funcion slider
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -26,4 +28,32 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function bookTravel(){
+  let travel = {
+    departureDate: $("#departure-date").val(),
+    returnDate: $("#return-date").val(),
+    destination: $("#destination").val(),
+    multidestination: $("#multidestination").val(),
+    passengers: $("#passengers").val()
+  };
+
+  exportToPDF(travel);
+}
+
+function exportToPDF(form){
+  let doc = new jsPDF();
+
+//To do this right a function to format as string must be done
+let content = 'Travel Booking: \n' +
+ 'Departure Date: ' + form.departureDate + 
+ '\n Return Date: ' + form.returnDate + 
+ '\n Destination: ' + form.destination +
+ '\n Multidestination:' + form.multidestination +
+ '\n Passengers: ' + form.passengers;
+
+  doc.text(content, 10, 10);
+
+  doc.save("booking.pdf");
 }

@@ -42,28 +42,59 @@
   </header>
 
   <main>
+        <!--   BUSCADOR DE VIAJES   -->
     <div class="buscadorDeViaje" id="paquetesBuscador">
       <h1>Comienza a Programar Tu Viaje con Nosotros</h1>
       <form>
-        <label for="departure-date">Fecha de salida:</label>
-        <input class="buscadores" type="date" id="departure-date" name="departure-date" />
+        <!-- Etiqueta y entrada de fecha de salida -->
+      <label for="departure-date">Fecha de salida:</label>
+      <input class="buscadores" type="date" id="departure-date" name="departure-date" />
+  
+      <!-- Etiqueta y entrada de fecha de regreso -->
+      <label for="return-date">Fecha de regreso:</label>
+      <input class="buscadores" type="date" id="return-date" name="return-date" />
+  
+      <!-- Etiqueta y menú desplegable para seleccionar un destino -->
+      <label for="destination">Destino:</label>
+      <select class="buscadores" id="destination" name="destination">
+        <option value="">-- Seleccione un paquete --</option>
+        <option value="Nueva York">Nueva York</option>
+        <option value="SantiagoChile">Santiago de Chile</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Salta">Salta</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="Miami">Miami</option>
+        <option value="Bariloche">Bariloche</option>
+        <option value="Ushuaia">Ushuaia</option>
+      </select>
+  
+      <!-- Etiqueta y menú desplegable para seleccionar múltiples destinos -->
+      <label for="multidestination">MultiDestino:</label>
+      <select class="buscadores" id="multidestination" name="multidestination">
+        <option value="">-- Seleccione un paquete --</option>
+        <option value="Nueva York">Nueva York</option>
+        <option value="SantiagoChile">Santiago de Chile</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Salta">Salta</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="Miami">Miami</option>
+        <option value="Bariloche">Bariloche</option>
+        <option value="Ushuaia">Ushuaia</option>
+      </select>
+  
+      <!-- Etiqueta y entrada para especificar la cantidad de pasajeros -->
+      <label for="passengers">Pasajeros:</label>
+      <input class="buscadores" type="number" id="passengers" name="passengers" min="1" max="5" />
+  
+      <!-- Botón para enviar el formulario -->
+      <input class="buscar" type="submit" value="Buscar" />
 
-        <label for="return-date">Fecha de regreso:</label>
-        <input class="buscadores" type="date" id="return-date" name="return-date" />
-
-        <label for="destination">Destino:</label>
-        <input class="buscadores" type="text" id="destination" name="destination" />
-
-        <label for="multidestination">MultiDestino:</label>
-        <input class="buscadores" type="text" id="multidestination" name="multidestination" />
-
-        <label for="passengers">Pasajeros:</label>
-        <input class="buscadores" type="text" id="passengers" name="passengers" />
-
-        <input class="buscar" type="button" onclick="bookTravel()" value="Buscar" />
+      <!-- Boton para reservar y funcion jspdf para descargar info a pdf -->
+        <input class="buscar" type="button" onclick="bookTravel()" value="RESERVAR AHORA" />
         
       </form>
     </div>
+
     <div class="contenedor" id="destinos">
       <div class="div-1">
         <h2>DESTINOS</h2>
@@ -89,9 +120,9 @@
       </div>
       <div class="div-2">
         <h2>PAQUETES</h2>
-        <!-- Slideshow container -->
+        <!-- CONTENEDOR CARROUSEL -->
         <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
+          <!-- Full-width images with caption text -->
           <div class="mySlides fade">
             <img src="./IMG/nyc.jpg" style="width: 100%" />
             <div class="text">
@@ -127,7 +158,6 @@
       </div>
     </div>
 
-
     <hr>
     <div class="contenedor2">
       <div class="salidasGrupales">
@@ -154,6 +184,7 @@
       </div>
     </div>
     <hr>
+
     <!--Tarjeta de presentacion de los participantes del Grupo 10-->
     <div class="quienesSomos" id="quienes-somos">
       <h2>QUIENES SOMOS</h2>

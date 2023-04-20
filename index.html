@@ -44,6 +44,7 @@
   <main>
         <!--   BUSCADOR DE VIAJES   -->
     <div class="buscadorDeViaje" id="paquetesBuscador">
+      
       <h1>Comienza a Programar Tu Viaje con Nosotros</h1>
       <form>
         <!-- Etiqueta y entrada de fecha de salida -->
@@ -57,7 +58,7 @@
       <!-- Etiqueta y menú desplegable para seleccionar un destino -->
       <label for="destination">Destino:</label>
       <select class="buscadores" id="destination" name="destination">
-        <option value="">-- Seleccione un paquete --</option>
+        <option value="">-- Seleccione un destino --</option>
         <option value="Nueva York">Nueva York</option>
         <option value="SantiagoChile">Santiago de Chile</option>
         <option value="Barcelona">Barcelona</option>
@@ -71,7 +72,7 @@
       <!-- Etiqueta y menú desplegable para seleccionar múltiples destinos -->
       <label for="multidestination">MultiDestino:</label>
       <select class="buscadores" id="multidestination" name="multidestination">
-        <option value="">-- Seleccione un paquete --</option>
+        <option value="">-- Seleccione un destino --</option>
         <option value="Nueva York">Nueva York</option>
         <option value="SantiagoChile">Santiago de Chile</option>
         <option value="Barcelona">Barcelona</option>
@@ -124,21 +125,21 @@
         <div class="slideshow-container">
           <!-- Full-width images with caption text -->
           <div class="mySlides fade">
-            <img src="./IMG/nyc.jpg" style="width: 100%" />
+            <a href="#"><img src="./IMG/nyc.jpg" style="width: 100%" /></a>
             <div class="text">
               <h1>NEW YORK U$S3500 AEREOS, HOTEL 4* 7 NOCHES,TRASLADOS, SEGURO</h1>
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img src="./IMG/maldivas.jpg" style="width: 100%" />
+            <a href="#"><img src="./IMG/maldivas.jpg" style="width: 100%" /></a>
             <div class="text">
               <h1>MAR CARIBE 10 NOCHES, ALL INCLUSIVE, SEGURO, U$S2500</h1>
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img src="./IMG/paris.jpg" style="width: 100%" />
+            <a href="#"><img src="./IMG/paris.jpg" style="width: 100%" /></a>
             <div class="text">
               <h1> EUROPA 20 NOCHES AEREOS, HOTEL 4*, EXCURSIONES, TRASLADOS, SEGURO, U$S4500 </h1>
             </div>
@@ -168,7 +169,7 @@
           <span class="material-symbols-outlined"> diversity_3 </span>
         </div>
         <div class="excursiones">
-          <img src="IMG/SalidasGrupales.jpg" width="300px" height="265px" alt="SalidasGrupales">
+          <img src="IMG/SalidasGrupales.jpg" width="350px" height="265px" alt="SalidasGrupales">
         </div>
       </div>
       <div class="cruceros">
@@ -179,7 +180,7 @@
           <span class="material-symbols-outlined"> directions_boat </span>
         </div>
         <div class="navegando">
-          <img src="IMG/crucero.png" width="400px" alt="imagenDeCrucero">
+          <img src="./IMG/crucero.jpg" width="350px" alt="imagenDeCrucero">
         </div>
       </div>
     </div>
@@ -243,7 +244,7 @@
         </div>
       </div>
       <div class="mapa">
-        <h3>PUNTOS DE VENTAS</h3>
+        <h3>VENTAS</h3>
         <div class="col-md-4">
           <div class="box">
             <p>Tel: 0800-222-0800</p>
@@ -295,16 +296,18 @@
         <embed src="terminos-y-condiciones-viajes.pdf" type="application/pdf" width="300px" height="400px">
       </div>
     </div>
-  </div>
+  </div> 
+</footer>
 
-  <script
+<!-- FIGMA  https://www.figma.com/file/xksnsTKtCTfRJDwUmBGK3C/TP1DesarrolladorWebUTNgrupo10?node-id=0-1&t=cwt3Q5UdapcWAxFh-0 -->
+
+<script
   src="https://code.jquery.com/jquery-3.6.4.min.js"
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="ventanaEmergente.js"></script>
   <script src="function.js"></script>
-</footer>
-<!-- FIGMA  https://www.figma.com/file/xksnsTKtCTfRJDwUmBGK3C/TP1DesarrolladorWebUTNgrupo10?node-id=0-1&t=cwt3Q5UdapcWAxFh-0 -->
+
 </body>
 </html>
